@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> 表单其他知识</title>
+	<script>
+		//更改progress的值，产生动态效果
+		window.onload = function(){
+			var hjj1 =document.getElementById("jindutiao");
+		    console.log(hjj1.value);
+		    var hjj2 =document.getElementById("baifenbi");
+		   // hjj.value=80;
+		   // 定时器
+		   setInterval(function(){
+		   	if(hjj1.value>100){
+		   		return;
+		   	}else{
+		   		hjj1.value +=5;
+		   		// 更改span内部进度条
+		   		baifenbi.innerHTML=hjj1.value+"%";
+		   	}
+		   },1000);
+	}
+		
+	</script>
+</head>
+<body>
+    <form action="">
+    	<fieldset>
+    		<legend></legend>
+    		用户名: <input type="text" size="100" maxlength="10">
+    		<br/>
+    		密码：<input type="text">
+    		<br/>
+    		<select name="" id="">
+    		<optgroup label="山西省">
+    			<option value="">太原</option>
+    			<option value="">运城</option>
+    			<option value="">大同</option>
+    		</optgroup>
+    		<optgroup label="水果">
+    			<option value="">香蕉</option>
+    			<option value="">苹果</option>
+    			<option value="">橙子</option>
+    		</optgroup>
+    		</select>
+    	</fieldset>
+    </form>
+ <hr/>
+ <!-- 进度条 -->
+ <div align="center">
+ <progress id="jindutiao" value="30" max="100"></progress><output id="baifenbi"></output>
+ <br/>
+ <!-- 绿色 -->
+ <meter min="0" max="100" low="40" high="60" value="50"></meter>
+ <!-- 黄色 -->
+ <meter min="0" max="100" low="40" high="60" value="80"></meter>
+ <meter min="0" max="100" low="40" high="60" optimum="20" value="50"></meter>
+ <!-- optimum 是一个最优值 它挺关键的 -->
+<form action="" id=form1>
+ <input type="text" list="datasource" name="datalist">
+ <datalist id="datasource">
+ 	<option value="">hello</option>
+ 	<option value="">world</option>
+ </datalist>
+
+ <input type="text" name="test" autocomplete="off">
+ <br/>
+ 年月日:<input type="data">
+ <br>
+ 时间： <input type="time">
+ <br>
+ 年月日加时间 <input type="datatime-local">
+ <br>
+ 月份 <input type="month">
+  <br>
+ 周 <input type="week">
+  <br>
+ 年龄 <input type="number">
+ <br>
+ <input type="search">
+ <br>
+ <input type="color">
+ <br>
+邮箱<input type="email">
+<br>
+<!-- required代表必填项 填了表单才可以提交 -->
+url <input type="url" required="">
+<br>
+电话<input type="tel" pattern="[0-9]{11}">
+<br>
+滑块 <input type="range" min="0" max="100" step="10" value="50">
+<button>提交</button>
+<button formaction="./day03.html" formtarget="_blank" formnovalidate="">提交到别的地方</button>
+
+</form>
+外部的input:<input type="text" name="outinput" form="form1" />
+</div>
+</body>
+</html>

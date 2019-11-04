@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>有父元素的绝对定位</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+		.one{
+			height: 400px;
+			width: 400px;
+			background-color: coral;
+			margin: 100px;
+			position: relative;
+		}
+		.two{
+			height: 100px;
+			width: 100px;
+			background-color: cyan;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="one">
+		<div class="two"></div>
+	</div>
+
+
+</body>
+</html>

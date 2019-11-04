@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动布局</title>
+	<style>
+		div{
+			height: 100px;
+			width: 100px;
+		}
+		.one{
+			background-color: cyan;
+			float: right;
+			height: 200px;
+		}
+		.two{
+			background-color: pink;
+			float: right;
+		}
+		.three{
+			background-color: navy;
+			/*清除了兄弟间的浮动*/
+			/*clear: both;*/
+		}
+		.four{
+			background-color: green;
+			float: right;
+		}
+		.five{
+			background-color: blue;
+			float: right;
+
+		}
+		.six{
+             background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="one">one</div>
+	<div class="two">two</div>
+	<div class="three">three</div>
+	<div class="four">four</div>
+	<div class="five">five</div>
+    <div class="six">six</div>
+</body>
+</html>

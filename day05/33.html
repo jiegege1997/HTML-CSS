@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪类选择器</title>
+	<style>
+	/*聚焦状态*/
+		input[type=text]:focus{
+			/*border: 1px solid coral;*/
+			/*x,y,模糊距离*/
+			box-shadow: 3px 3px 2px #ccc;
+		}
+		/*禁用*/
+		input:disabled{
+			border:1px solid blue;
+		}
+		/*可用的*/
+		/*input:enabled{
+			border: 2px solid red;
+		}*/
+		
+		input[type=radio]:checked{
+			outline: 1px solid blue;
+		}
+		input[type=radio]:default{
+			outline: 1px solid red
+			;
+		}
+		/*通过验证的*/
+		input:valid{
+            border: 1px solid green;
+		}
+		/*不通过验证的*/
+		input:invalid{
+            border: 1px solid  red;
+		}
+		/*在范围内*/
+		input[type=number]:in-range{
+			border: 1px solid green;
+		}
+		/*在范围外*/
+		input[type=number]:out-of-range{
+			border: 1px solid orange;
+		}
+	</style>
+</head>
+<body>
+<form action="#">
+	用户名: <input type="text"  required="">
+	<br>
+	<input type="submit" value="提交">
+	<br>
+	<input type="password" disabled="">
+	<br>
+	<input type="radio" name="xingbie" checked="">男
+	<input type="radio" name="xingbie">女
+	<br>
+	<input type="number" min="10" max="50">
+</form>
+	
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload=function(){
+			var bianliang =document.getElementById("jindutiao");
+			setInterval(function(){
+				if (bianliang>100) {
+					return
+				}else{
+					bianliang.value+=5;
+					baifenbi.innerHTML=bianliang.value+"%";
+				}
+			},500);
+		}
+	</script>
+</head>
+<body>
+	<form action="">
+		
+			
+			用户名 <input type="text">
+			<br>
+			密码 	<input type="text">
+			<br>
+			<select name="" id="">
+				<optgroup label="山西省">
+				<option value="">太原</option>
+				<option value="">运城</option>
+				<option value="">333</option>
+				</optgroup>
+				<optgroup label="衣服">
+				<option value="">裤子</option>
+				<option value="">鞋子</option>
+				<option value="">衣服</option>
+				</optgroup>
+			</select>
+		
+	</form>
+	<progress id="jindutiao" value="30" max="100"></progress>
+	<output id="baifenbi">33%</output>
+	<button formaction="./day03.html" formtarget="_blank" formnovalidate="">提交到别的地方</button>
+	<input type="range" min="0" max="100" step="5" value="50">
+
+
+</body>
+</html>

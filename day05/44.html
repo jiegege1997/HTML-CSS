@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素选择器</title>
+
+	<style>
+	/*在之前添加内容 标识*/
+		section p::before{
+			content: '*';
+			color: red;
+		}
+		section p::after{
+			content: '*';
+			color: red;
+		}
+		form span::before{
+			content: '*';
+			color: red;
+		}
+		div::first-letter{
+			font-size:30px;
+			color: coral;
+		}
+		div::first-line{
+			color: navy;
+		}
+		/*用户选中的文本的设置*/
+		div::selection{
+			background-color: pink;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+<div>
+	你不是真正的快乐，你不是真正的快乐，你不是真正的快乐，你不是真正的快乐，你不是真正的快乐，你不是真正的快乐
+</div>
+
+
+
+
+	<article>
+		<section>
+			<p>这是第一段话</p>
+			<p>这是第三段话</p>
+			<p>这是第三段话</p>
+			<p>这是第四段话</p>
+		</section>
+	</article>
+    
+    <form action="">
+    	<span>用户名</span><input type="text" required="">
+    	<br>
+    	<span>密码</span><input type="password" required="">
+    	<br>
+    	<input type="submit">
+    </form>
+
+
+</body>
+</html>

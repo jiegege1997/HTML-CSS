@@ -1,0 +1,56 @@
+单位 
+px 
+em (相对于font size )
+rem
+百分比
+
+
+颜色
+   关键字
+   #ffffff
+   #fff
+   rgb()
+   rgba()
+font属性
+    font-family 字体家族
+    serif    有衬线
+    sans-serif  无衬线
+    cursive  草书
+    fantasy 梦幻的
+    monospace 
+
+
+ 声明字体
+    @font-face{
+       font-family:'test';
+       src:url(./test.ttf)
+    }
+    使用网络字体
+    div{
+       font-family:test;
+    }
+    font-style   斜体
+       font-style 
+    font-weight  粗细
+    font-size    大小
+
+    text-decoration  文本修饰
+    {
+       text-decoration
+       text-decoration
+       text-decoration
+    }
+    text-transform  英文字体的变形
+    {
+       text-transform:uppercase;
+    }
+    display(不占据空间的隐藏)
+    visibility
+    opacity
+    overflow：溢出内容的处理
+
+
+   图片精灵技术
+   background-position
+   sprites 精灵   css 图片精灵技术
+   要用ps进行切片与测量

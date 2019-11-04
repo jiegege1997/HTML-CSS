@@ -1,0 +1,5 @@
+dispaly:inline-block;
+将其他元素转换成行内显示，
+同时可设置宽高的元素
+display:inline;
+将其他元素转换成行内元素 不可设置宽高

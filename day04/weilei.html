@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪类选择器</title>
+	<style>
+	/*鼠标悬停的似乎*/
+		.btn:hover>.list{
+			display: block;
+		}
+		.list{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="btn">
+    <button>显示菜单</button>
+    <div class="list">
+		<ul>
+			<li>React</li>
+			<li>vue</li>
+			<li>JQuery</li>
+			<li>AngularJS</li>
+		</ul>
+	</div>  
+	</div>  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+</head>
+<body>
+    <form action="#">
+    <!-- autofocus 自动聚焦 -->
+	 用户名: <input autofocus="" type="text" name="username" >
+	 <br/>
+	 密码:  &nbsp;&nbsp;&nbsp;<input type="password" name="password" >
+	 <br/>
+	 <!-- 表单提交数据 实际就是提交表单中的value值 -->
+     性别: <input checked="" id="female" type="radio" name="xingbie" value="女"/><label for="female">女</label>
+     <!-- 点label得时候点击某个表单控件 -->
+           <input id="male" type="radio" name="xingbie" value="男"><label for="male">男</label>
+     <br/>
+     爱好: <input type="checkbox" name="aihao" checked="" value="basketball"/>篮球
+          <input type="checkbox" name="aihao" checked="" value="sing"/>唱
+          <input type="checkbox" name="aihao" value="dance"/>跳
+          <input type="checkbox" name="aihao" value="rap"/>rap
+     <br/>
+
+     籍贯:   
+     <!-- multiple="" size="2" -->
+           <select name="jiguan" id="" >
+     	   <option value="">请选择</option>
+     	   <option value="上海">上海	</option>
+     	   <option value="北京">北京</option>
+     	   <option value="深圳">深圳</option>
+     	   <option value="广州">广州</option>
+     </select>
+     <hr/>
+     个人简介:
+     <textarea name="gerenjianjie" id="" cols="30" rows="10"></textarea>
+     
+     <input type="submit" value="提交">
+     </form>
+     <hr/>
+     <form action="">
+     	<input type="text" name="id" value="1001" disabled=""/>
+     	<input type="text" name="hello" value="3333333" readonly=""/>
+     <button>提交</button>
+
+     </form>
+    <hr>
+     <form action="" enctype="multipart/dat03.html" method="post">
+     	头像 <input type="file" name="file"/> 
+     	<button>提交</button>
+     </form>
+	 <!-- 自动聚焦 百度就是 -->
+	 <!-- 时间分割了嘴角忘记我们的微笑 在你离开之后的天空 我像风筝寻一个梦 雨后的天空  -->
+
+</body>
+</html>

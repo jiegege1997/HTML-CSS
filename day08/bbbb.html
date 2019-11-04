@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			/*使用动画*/
+			animation-name: hjj;
+			/*动画执行时长 默认是0*/
+			animation-duration: 2s;
+			animation-iteration-count: 3;
+			/*动画执行顺序*/
+			/*从最后一帧到第一帧*/
+			/*animation-direction: reverse;*/
+			/*奇数次执行，从第一帧到最后一帧*/
+			/*偶数次执行，从最后一帧到第一贞*/
+			animation-direction: alternate;
+			/*动画延迟执行*/
+			animation-delay: 2s;
+			/*填充模式*/
+			/*在动画等待时间内，将第一贞的样式填充到元素上*/
+			animation-fill-mode: backwards;
+			/*在动画结束的时候 使用结束贞填充元素*/
+			animation-fill-mode: forwards;
+			/*速度曲线 动画在执行过程中变化的速率*/
+			/*animation-timing-function: ease-in;*/ /*（先慢后快）*/
+			/*animation-timing-function: ease-out;*/ /*（先快后慢）*/
+			/*animation-timing-function: ease-in-out;*/   /*（先慢后快最后慢）*/
+			/*animation-timing-function: linear;*/ /*(匀速)*/
+
+
+		}
+		div:hover{
+			animation-play-state: paused;
+		}
+		@keyframes hjj{
+             from{
+                width: 100px;
+                background-color: cyan;
+             }
+             to{
+             	width: 800px;
+                background-color: coral;
+             }
+		}
+	</style>
+</head>
+<body>
+	 <div></div>
+</body>
+</html>

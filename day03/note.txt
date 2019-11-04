@@ -1,0 +1,51 @@
+
+a
+   href=""
+   取值:url/锚点（#id）
+   malito:邮箱地址
+   target=""
+   取值 _blank  新选项卡打开	
+        _self(默认)   在当前选项卡打开
+img
+   src=""
+      路径
+   alt=""
+      提示信息
+   width=""
+   height=""
+table
+   thead
+   tbody
+      tr
+        td/th(居中加粗的效果，一般是表头)
+
+   tfoot
+table
+   border="1px"
+   cellpadding="0" 内容距离单元格边框的距离
+   cellspacing="0" 单元格与单元格的距离
+   align="center"
+   caption 表的标题
+
+
+
+表现形式与div类似
+header
+   放一些logo
+footer
+   放一些版权信息
+nav
+   导航
+article
+   文章
+section
+   第一章及内容
+address
+   地址
+aside
+   侧边栏，广告
+form
+
+{
+	display:block
+}

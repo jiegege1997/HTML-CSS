@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a{
+			/*去掉文本修饰*/
+			text-decoration: none;
+		}
+		/*a标签未访问的样式*/
+		a:link{
+			color: orange;
+		}
+		/*a标签访问过的样式*/
+		a:visited{
+			color: red;
+		}
+		/*悬停*/
+		a:hover{
+			color: cyan;
+			cursor: wait;
+		}
+		/*点击*/
+		a:active{
+          color: #cccccc;
+		}
+		span{
+			/*设置光标为手型*/
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<a href="./weilei.html">跳转到伪类</a>
+	<br>
+	<a href="./lianxi.html">跳转到练习</a>
+	<br>
+	<a href="./shuxin.html">跳转到属性</a>
+	<span>123456</span>
+</body>
+</html>

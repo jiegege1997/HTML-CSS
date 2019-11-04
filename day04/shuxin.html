@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid coral;
+		}
+		/*属性选择器*/
+/*		[class]{
+			background: red;
+		}*/
+		/*有class属性的被选中*/
+/*		div[class]{
+			background: pink;
+		}*/
+		/*选中class为one的元素*/
+		[class=one]{
+			background: pink;
+		}
+		/*选中以t开始的元素*/
+		[class^=t]{
+			background: green;
+
+		}
+		/*选中以e结尾的元素*/
+		[class$=e]{
+           
+		}
+	</style>
+</head>
+<body>
+	<div class="one">111</div>
+	<div class="two">222</div>
+	<div class="three">333</div>
+	<div>444</div>
+	<span class="four">5555</span>
+</body>
+</html>

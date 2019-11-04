@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>媒体查询</title>
+	<style>
+		div{
+			height: 100px;
+			width: 100px;
+			background: pink;
+		}
+		@media screen and (min-width: 768) and (max-width: 992px){
+			div{
+			height: 200px;
+			width: 200px;
+			background: blue;
+			}
+		}
+		@media screen and (min-width: 0) and (max-width: 768px){
+			div{
+			height: 200px;
+			width: 200px;
+			background: red;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

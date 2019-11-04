@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性值的计算</title>
+	<style>
+		/*div{
+			width: calc(50% + 30px);
+			height: 100px;
+			background-color: pink;
+		}*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			display: flex;
+			/*height: 600px;*/
+			/*高度占满*/
+			/*浮动，定位，块级元素的宽度将不再是100%，而是由内部内容撑起来*/
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			/*width: 100%;*/
+		}
+		.left{
+			height: 100%;
+			width: 200px;
+			background-color: coral;
+		}
+		.right{
+			height: 100%;
+			width: calc(100% - 200px);
+			background-color: cyan;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+	   <div class="left"></div>
+	   <div class="right"></div>
+	</div>
+</body>
+</html>

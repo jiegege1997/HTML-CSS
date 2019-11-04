@@ -1,0 +1,85 @@
+overflow 溢出处理
+  auto  根据情况产生滚动条
+  scorll 一直产生滚动条
+  hidden 超出内容隐藏
+  {
+      overflow-x:auto;
+      box-sizing:
+
+
+  }
+盒子模型
+    w3c 
+    设置width和height是内容区的
+    IE盒子
+    设置的width和height是盒子的
+ 转换
+   box-sizing: content-box;
+   box-sizing:
+ 
+ 清楚浮动 
+     兄弟之间清楚浮动产生的影响 clear:both
+     父子之间清楚浮动产生的影响 overflow:hidden;（父元素上的）
+
+     border-radius:50%
+     background
+     {
+                 background-color
+                 background-image
+                 background-repeat  no repead;
+                 background-size  100% 100%
+     }
+ 定位  
+ position 属性
+ 1 静态定位 static;
+   默认文档流的位置
+ 1 相对定位  relative;
+ 相对于原来的位置进行定位
+ 3. 绝对定位  absolute;
+ 如果有定位的祖先元素 相对于离他最近的祖先元素定位
+ 否则 相对于视口区的左上角定位
+ 4 固定定位   fixed
+ 固定在浏览器的某个位置上 
+ 定位元素 使用相对定位或者绝对定位或者固定定位 都是定位元素
+ 定位元素才可以使用以下属性
+  left right top bottom  
+
+最好用父元素relative 给子元素 absolute当成祖先元素
+
+
+z-index 层叠顺序
+   值越大 离眼睛越近
+   定位元素 绝对定位，定到了同一个位置
+
+
+浮动，定位块级元素，不再独占一行，需要自己设置。
+
+盒子布局   margin padding
+浮动布局
+定位布局
+flex布局
+
+
+动画 
+一帧一帧的东西组成一个动画序列
+先声明动画序列 再使用
+动画序列的声明：使用
+        p{
+        animation-duration 3s
+        animation-name slide
+        }
+
+
+
+
+          @keyframes slidein{
+            from{
+            margin-left 100%
+            width  300%
+            }
+            to{
+            margin-left 0%
+            width300%
+
+            }
+          }

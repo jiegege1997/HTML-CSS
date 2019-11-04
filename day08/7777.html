@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伸缩盒布局 弹性盒布局 flex布局</title>
+	<style>
+		.container{
+			height: 650px;
+			border: 1px solid red;
+			display: flex;
+           flex-direction: column;
+		    /*flex-direction: row;*/
+
+
+
+		    
+		    /*主轴对齐方式
+		    项目在主轴上居中对齐
+		    justify-content: center;
+		    项目在主轴上靠终点对齐
+		    justify-content: flex-end;
+		    在项目与项目之间有空间
+		    justify-content: space-between;
+		    项目四周有空间
+		    justify-content: space-around;*/
+
+		    /*交叉轴上的对齐方式*/
+		    /*align-items: center;*/
+		    /*如果项目没有设置宽高，默认的对齐方式 会拉伸项目*/
+		    /*align-items: stretch;*/
+		    /*项目内部文本对齐 基准线对齐*/
+		    /*align-items: baseline;*/
+		    /*项目多了，一个主轴放不下的时候*/
+		    /*flex-wrap: wrap;*/
+		    /*多主轴在交叉轴的对齐方式*/
+		   /* align-content: center;
+		    align-content: space-around;
+		    align-content: space-between;*/
+
+
+		}
+		.container>div{
+			/*width: 200px;*/
+			flex: 1;
+			/*height: 200px;*/
+			border: 1px solid blue;
+		}
+		div.one{
+			/*最小占据主轴上的空间*/
+			flex-basis: 400px;
+			flex: 400px 1;
+			/*flex: 2;*/
+			/*height: 100px;*/
+			/*padding: 10px;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="one">one</div>
+		<div class="two">two</div>
+		<div class="three">three</div>
+		
+	</div>
+</body>
+</html>

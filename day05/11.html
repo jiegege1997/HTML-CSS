@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试~=和*=</title>
+	<style>
+	/*10*/
+	.two{
+		color: blue ;
+	}
+	.one{
+		color: red;
+	}
+	[class~=one]{
+		background-color: pink
+	}
+	[class*=one]{
+		background-color: red
+	}
+	/*1*/
+	div{
+		color: cyan;
+	}
+	/*珊瑚色*/
+
+	
+	 </style>
+</head>
+<body>
+	<div class="one two">说好的幸福呢</div>
+	<div class="onetwo">一路向北</div>
+	<!-- 前面选择器不一样的话,要比较它们的权重
+	     ！important 最优先(不推荐使用)
+	     style属性1000
+	     id选择器 100
+	     class选择器 伪类选择器 属性选择器 10
+	     标签选择器  1
+	     空格 + > ~  0
+	 -->
+	 <!-- 前面选择器一样的话，后面的要覆盖前面的 -->
+</body>
+</html>

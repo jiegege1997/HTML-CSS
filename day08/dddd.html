@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转</title>
+	<style>
+		div{
+			height: 100px;
+			width: 100px;
+			margin: 0 auto;
+			background-color: coral;
+			transform: rotateZ(0deg);
+			animation-name: hjj;
+			animation-duration: 2s;
+			/*transform-origin: right bottom;*//*旋转的原点  坐标圆心的位置*/
+		}
+		@keyframes hjj{
+			0%{ 
+				transform: translate(0,0);
+
+			}
+			100%{
+				transform: translate(100px,200px);
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		hello
+	</div>
+</body>
+</html>

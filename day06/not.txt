@@ -1,0 +1,12 @@
+css单位
+ px 绝对单位
+ em  相对单位
+ font-size的大小 16px
+  1em=16px
+  手动修改了body的font-size=20px
+  1em=20px
+  rem 相对单位
+   1rem=16px
+   百分比
+   父 200px*200px
+   子 %50*%50

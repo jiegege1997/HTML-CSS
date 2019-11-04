@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>继承</title>
+    <style>
+        div::section{
+        	background-color: pink;
+        	color: white;
+        }
+    	div{
+    		/*可以继承到子元素*/
+    		font-size: 50px;
+    		/*不可继承*/
+    		border: 1px solid red;
+    	}
+    	span{
+    		/*保持原来字体的大小 initial*/
+    		font-size: initial;
+    		/*将不可继承的变成可继承*/
+    		border: inherit;
+    	}
+    </style>
+</head>
+<body>
+	
+<div>
+<section>
+    div标签
+	<p>p标签</p>
+	<span>span标签</span>
+</section>
+</div>
+
+
+
+</body>
+</html>
